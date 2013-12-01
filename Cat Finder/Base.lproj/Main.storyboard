@@ -124,12 +124,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="MAN-PB-mU7"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your gender (male or female)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ojt-0c-QPf">
                                 <rect key="frame" x="72" y="286" width="211" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="9c7-Ru-Xoh"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -151,6 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="65" y="-304"/>
         </scene>
         <!--Edit Profile View Controller - Home-->
         <scene sceneID="X5I-Zk-ZIh">
@@ -376,7 +383,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UgY-2d-k5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615" y="13"/>
+            <point key="canvasLocation" x="623" y="-249"/>
         </scene>
         <!--Edit Profile View Controller - Edit Profile-->
         <scene sceneID="45u-gk-22w">
@@ -444,10 +451,10 @@
             </objects>
             <point key="canvasLocation" x="1151" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Dating View Controller-->
         <scene sceneID="GxK-LX-fXa">
             <objects>
-                <viewController id="GAp-ax-Yj9" sceneMemberID="viewController">
+                <viewController id="GAp-ax-Yj9" customClass="DatingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QBC-81-vcq"/>
                         <viewControllerLayoutGuide type="bottom" id="fGU-tU-wtm"/>
@@ -466,13 +473,98 @@
                                     <segue destination="SPQ-d4-QA8" kind="modal" id="7OD-La-z3s"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W9-mu-nz4">
+                                <rect key="frame" x="53" y="73" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36t-aG-goG">
+                                <rect key="frame" x="142" y="73" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBO-qY-H3M">
+                                <rect key="frame" x="242" y="73" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Interested In What Gender" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QE-on-1BC">
+                                <rect key="frame" x="76" y="195" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ReturnKeyButton:" destination="GAp-ax-Yj9" eventType="editingDidEndOnExit" id="xpW-0U-iiB"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-Ha-aIr">
+                                <rect key="frame" x="126" y="432" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="GAp-ax-Yj9" eventType="touchUpInside" id="IKM-AR-T1u"/>
+                                    <segue destination="lvc-X0-HJp" kind="modal" id="a9m-Cq-eVN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="interestedIn" destination="4QE-on-1BC" id="raH-eH-ZWx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy5-l1-S6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1514" y="333"/>
+            <point key="canvasLocation" x="1658" y="521"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="70N-12-2c7">
+            <objects>
+                <viewController id="lvc-X0-HJp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DBe-Ol-im3"/>
+                        <viewControllerLayoutGuide type="bottom" id="o5b-cT-JQ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rvQ-fI-l1L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsh-1S-PCy">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GAp-ax-Yj9" kind="modal" id="Gtt-eA-dnn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MG4-ID-Dmy">
+                                <rect key="frame" x="254" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SPQ-d4-QA8" kind="modal" id="yuo-LV-Rd3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vtd-KK-BNY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNt-Cw-7Y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2187" y="533"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -481,6 +573,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Gtt-eA-dnn"/>
         <segue reference="7OD-La-z3s"/>
         <segue reference="g0r-iF-89K"/>
         <segue reference="ezs-iu-8ty"/>

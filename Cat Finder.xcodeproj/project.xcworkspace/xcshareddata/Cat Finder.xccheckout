@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A2A1146D-401B-4E17-861B-DB0A98193B0B</string>
+	<string>8F5F0154-B61B-4349-AAC5-F5140E226887</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Cat Finder</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F031DA30-B62D-419C-B52D-3997A3A69530</key>
-		<string>https://github.com/solson1/CatFinder</string>
+		<key>3722CEF4-7E31-4478-9615-D261BDEA7B43</key>
+		<string>https://github.com/jpsheeha/Cat-Finder</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Cat Finder/Cat Finder.xcodeproj/project.xcworkspace</string>
+	<string>Cat Finder.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F031DA30-B62D-419C-B52D-3997A3A69530</key>
-		<string>../../..</string>
+		<key>3722CEF4-7E31-4478-9615-D261BDEA7B43</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/solson1/CatFinder</string>
+	<string>https://github.com/jpsheeha/Cat-Finder</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F031DA30-B62D-419C-B52D-3997A3A69530</string>
+	<string>3722CEF4-7E31-4478-9615-D261BDEA7B43</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F031DA30-B62D-419C-B52D-3997A3A69530</string>
+			<string>3722CEF4-7E31-4478-9615-D261BDEA7B43</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CatFinder</string>
+			<string>Cat-Finder</string>
 		</dict>
 	</array>
 </dict>
