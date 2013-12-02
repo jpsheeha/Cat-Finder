@@ -7,6 +7,8 @@
 //
 
 #import "DatingViewController.h"
+#import <Parse/Parse.h>
+#import "LoginViewController.h"
 
 @interface DatingViewController ()
 
@@ -41,17 +43,43 @@
     
 }
 
-- (IBAction)setDateType:(id)sender{}
-- (IBAction)setGenderPref:(id)sender{}
-- (IBAction)setMinAgePref:(id)sender{}
-- (IBAction)submitButton:(id)sender {
+
+- (IBAction)submitButton:(UIButton*)sender {
+    PFObject *newDateObject = [PFObject objectWithClassName:@"FindDate"];
+    //current user
+    [newDateObject setObject:[PFUser currentUser].objectId forKey: @"userID"];
+    //date type
+    NSNumber *DType = [NSNumber numberWithInteger:_dateType.selectedSegmentIndex];
+    newDateObject[@"type"] = DType;
+    //female preference
+    NSNumber *dW;
+    if(_dateWoman.on){
+        dW = [NSNumber numberWithInt:(1)];
+    }
+    else {
+        dW = [NSNumber numberWithInt:(0)];
+    }
+    newDateObject[@"dateW"] = dW;
     
+    //male preference
+    NSNumber *dM;
+    if(_dateMan.on){
+        dM = [NSNumber numberWithInt:(1)];
+    }
+    else {
+        dM = [NSNumber numberWithInt:(0)];
+    }
+    newDateObject[@"dateM"] = dM;
     
-//    PFUser *newUser = [PFUser currentUser];
-//    [newUser setObject:_interestedIn.text forKey:@"interestedIn"];
-//    [newUser saveInBackground];
+    NSNumber *minAge = [NSNumber numberWithInteger:_sliderMinAge.value];
+    newDateObject[@"minAge"] = minAge;
     
+    NSNumber *maxAge = [NSNumber numberWithInteger:_sliderMaxAge.value];
+    newDateObject[@"maxAge"] = maxAge;
     
+    //[newDateObject setObject:_dateType.selectedSegmentIndex forKey:@"type"];
+    //ßßßß[newDateObject setObject:_dateType.selectedSegmentIndex forKey:@"type"];
+    [newDateObject save];
     
     
     

@@ -63,6 +63,10 @@
     [self checkFieldComplete];
 }
 
+- (NSString*)getUserName:(id)sender{
+    return _usernameField.text;
+}
+
 
 - (void) checkFieldComplete {
     if ([_usernameField.text isEqualToString:@""] || [_firstNameField.text isEqualToString:@""] || [_lastNameField.text isEqualToString:@""] || [_emailField.text isEqualToString:@""] || [_passwordField.text isEqualToString:@""] || [_reEnterPasswordField.text isEqualToString:@""]) {

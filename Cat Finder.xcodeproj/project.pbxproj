@@ -38,7 +38,6 @@
 		EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3D728F184BB32200F0DE62 /* DatingViewController.m */; };
 		EF3EA44A184D033600780E7A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3EA449184D033600780E7A /* Parse.framework */; };
 		EF3EA44E184D0CF300780E7A /* FoundDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3EA44C184D0CF300780E7A /* FoundDateController.m */; };
-		EF3EA44F184D0CF300780E7A /* FoundDateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3EA44D184D0CF300780E7A /* FoundDateController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +94,6 @@
 		EF3EA449184D033600780E7A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Desktop/Parse.framework; sourceTree = "<group>"; };
 		EF3EA44B184D0CF300780E7A /* FoundDateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundDateController.h; sourceTree = "<group>"; };
 		EF3EA44C184D0CF300780E7A /* FoundDateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundDateController.m; sourceTree = "<group>"; };
-		EF3EA44D184D0CF300780E7A /* FoundDateController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoundDateController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,22 +179,21 @@
 				318738A018417B5E00DCBF9D /* AppDelegate.m */,
 				318738A218417B5E00DCBF9D /* Main.storyboard */,
 				318738E51841D38E00DCBF9D /* CatFoundViewController.h */,
+				318738E61841D38E00DCBF9D /* CatFoundViewController.m */,
 				318738E81841ED2900DCBF9D /* CatSubmitViewController.h */,
 				318738E91841ED2900DCBF9D /* CatSubmitViewController.m */,
-				318738E61841D38E00DCBF9D /* CatFoundViewController.m */,
 				318738DF1841CCAD00DCBF9D /* CatCell.h */,
 				318738E01841CCAD00DCBF9D /* CatCell.m */,
 				318738DC1841A33C00DCBF9D /* EditProfileViewController.h */,
 				318738DD1841A33C00DCBF9D /* EditProfileViewController.m */,
 				318738D918418B9700DCBF9D /* LoginViewController.h */,
 				318738DA18418B9700DCBF9D /* LoginViewController.m */,
+				EF3EA44B184D0CF300780E7A /* FoundDateController.h */,
+				EF3EA44C184D0CF300780E7A /* FoundDateController.m */,
 				318738A518417B5E00DCBF9D /* ViewController.h */,
 				318738A618417B5E00DCBF9D /* ViewController.m */,
 				318738A818417B5E00DCBF9D /* Images.xcassets */,
 				3187389718417B5E00DCBF9D /* Supporting Files */,
-				EF3EA44B184D0CF300780E7A /* FoundDateController.h */,
-				EF3EA44C184D0CF300780E7A /* FoundDateController.m */,
-				EF3EA44D184D0CF300780E7A /* FoundDateController.xib */,
 			);
 			path = "Cat Finder";
 			sourceTree = "<group>";
@@ -308,7 +305,6 @@
 			files = (
 				318738A918417B5E00DCBF9D /* Images.xcassets in Resources */,
 				3187389B18417B5E00DCBF9D /* InfoPlist.strings in Resources */,
-				EF3EA44F184D0CF300780E7A /* FoundDateController.xib in Resources */,
 				318738A418417B5E00DCBF9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

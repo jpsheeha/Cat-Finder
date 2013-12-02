@@ -25,6 +25,9 @@
 
 - (IBAction)registeredButton:(id)sender;
 - (IBAction)loginButton:(id)sender;
+
+- (NSString*)getUserName:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITextField *loginUsernameField;
 @property (weak, nonatomic) IBOutlet UITextField *loginPasswordField;
 

@@ -18,9 +18,7 @@
 //}
 
 //items in the page
-@property (weak, nonatomic) IBOutlet UIButton *casualDate;
-@property (weak, nonatomic) IBOutlet UIButton *formalDate;
-@property (weak, nonatomic) IBOutlet UIButton *surpriseDate;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *dateType;
 @property (weak, nonatomic) IBOutlet UISwitch *dateMan;
 @property (weak, nonatomic) IBOutlet UISwitch *dateWoman;
 @property (weak, nonatomic) IBOutlet UISlider *sliderMinAge;
@@ -28,10 +26,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
-- (IBAction)submitButton:(id)sender;
-- (IBAction)setDateType:(id)sender;
-- (IBAction)setGenderPref:(id)sender;
-- (IBAction)setMinAgePref:(id)sender;
-- (IBAction)setMaxAgePref:(id)sender;
+- (IBAction)submitButton:(UIButton*)sender;
+
 
 @end

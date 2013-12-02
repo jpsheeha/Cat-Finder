@@ -473,27 +473,6 @@
                                     <segue destination="SPQ-d4-QA8" kind="modal" id="7OD-La-z3s"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W9-mu-nz4">
-                                <rect key="frame" x="20" y="111" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Casual Date">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36t-aG-goG">
-                                <rect key="frame" x="117" y="111" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Formal Date">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBO-qY-H3M">
-                                <rect key="frame" x="208" y="111" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Surprise Me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-Ha-aIr">
                                 <rect key="frame" x="126" y="473" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -523,7 +502,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpY-5U-rap">
-                                <rect key="frame" x="150" y="188" width="51" height="31"/>
+                                <rect key="frame" x="151" y="188" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Woman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR9-pE-6zC">
@@ -539,7 +518,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="18" maxValue="55" translatesAutoresizingMaskIntoConstraints="NO" id="xbb-P2-kmX">
-                                <rect key="frame" x="101" y="282" width="118" height="34"/>
+                                <rect key="frame" x="102" y="285" width="118" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="18" maxValue="55" translatesAutoresizingMaskIntoConstraints="NO" id="luE-sm-Ych">
@@ -558,18 +537,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xfH-Vg-Jvk">
+                                <rect key="frame" x="39" y="94" width="243" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Casual Date"/>
+                                    <segment title="Formal Date"/>
+                                    <segment title="Surprise Me!"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setDateType:" destination="GAp-ax-Yj9" eventType="touchUpInside" id="nrb-Pi-JxS"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="casualDate" destination="6W9-mu-nz4" id="As4-sp-rnk"/>
                         <outlet property="dateMan" destination="b8r-te-SPY" id="9SP-Wd-VkF"/>
+                        <outlet property="dateType" destination="xfH-Vg-Jvk" id="oEZ-Fh-vpg"/>
                         <outlet property="dateWoman" destination="mpY-5U-rap" id="19d-50-gRd"/>
-                        <outlet property="formalDate" destination="36t-aG-goG" id="WTr-5q-1t9"/>
                         <outlet property="sliderMaxAge" destination="luE-sm-Ych" id="rDz-Xq-t0V"/>
                         <outlet property="sliderMinAge" destination="xbb-P2-kmX" id="pab-oU-Nwh"/>
                         <outlet property="submitButton" destination="VKp-Ha-aIr" id="LdJ-DV-Jdi"/>
-                        <outlet property="surpriseDate" destination="iBO-qY-H3M" id="y5O-pk-9iB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy5-l1-S6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -625,7 +614,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Gtt-eA-dnn"/>
-        <segue reference="yuo-LV-Rd3"/>
+        <segue reference="7OD-La-z3s"/>
         <segue reference="g0r-iF-89K"/>
         <segue reference="ezs-iu-8ty"/>
     </inferredMetricsTieBreakers>
