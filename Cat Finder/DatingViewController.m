@@ -44,9 +44,9 @@
 - (IBAction)submitButton:(id)sender {
     
     
-    PFUser *newUser = [PFUser currentUser];
-    [newUser setObject:_interestedIn.text forKey:@"interestedIn"];
-    [newUser saveInBackground];
+//    PFUser *newUser = [PFUser currentUser];
+//    [newUser setObject:_interestedIn.text forKey:@"interestedIn"];
+//    [newUser saveInBackground];
     
     
     

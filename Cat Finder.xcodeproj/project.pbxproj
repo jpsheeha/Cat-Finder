@@ -35,8 +35,8 @@
 		318738E11841CCAD00DCBF9D /* CatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 318738E01841CCAD00DCBF9D /* CatCell.m */; };
 		318738E71841D38E00DCBF9D /* CatFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318738E61841D38E00DCBF9D /* CatFoundViewController.m */; };
 		318738EA1841ED2900DCBF9D /* CatSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318738E91841ED2900DCBF9D /* CatSubmitViewController.m */; };
-		EF3D728D184B967E00F0DE62 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3D728C184B967E00F0DE62 /* Parse.framework */; };
 		EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3D728F184BB32200F0DE62 /* DatingViewController.m */; };
+		EF3EA44A184D033600780E7A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3EA449184D033600780E7A /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +88,9 @@
 		318738E61841D38E00DCBF9D /* CatFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatFoundViewController.m; sourceTree = "<group>"; };
 		318738E81841ED2900DCBF9D /* CatSubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatSubmitViewController.h; sourceTree = "<group>"; };
 		318738E91841ED2900DCBF9D /* CatSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatSubmitViewController.m; sourceTree = "<group>"; };
-		EF3D728C184B967E00F0DE62 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		EF3D728E184BB32200F0DE62 /* DatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatingViewController.h; sourceTree = "<group>"; };
 		EF3D728F184BB32200F0DE62 /* DatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatingViewController.m; sourceTree = "<group>"; };
+		EF3EA449184D033600780E7A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Desktop/Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 				318738D218417E2A00DCBF9D /* QuartzCore.framework in Frameworks */,
 				318738D018417E2000DCBF9D /* MobileCoreServices.framework in Frameworks */,
 				318738CE18417E1400DCBF9D /* libz.1.1.3.dylib in Frameworks */,
-				EF3D728D184B967E00F0DE62 /* Parse.framework in Frameworks */,
+				EF3EA44A184D033600780E7A /* Parse.framework in Frameworks */,
 				318738CC18417DDE00DCBF9D /* CoreLocation.framework in Frameworks */,
 				3187389318417B5E00DCBF9D /* CoreGraphics.framework in Frameworks */,
 				318738CA18417DC700DCBF9D /* CFNetwork.framework in Frameworks */,
@@ -149,7 +149,7 @@
 		3187388F18417B5E00DCBF9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EF3D728C184B967E00F0DE62 /* Parse.framework */,
+				EF3EA449184D033600780E7A /* Parse.framework */,
 				318738D718417E4600DCBF9D /* SystemConfiguration.framework */,
 				318738D518417E3D00DCBF9D /* StoreKit.framework */,
 				318738D318417E3200DCBF9D /* Security.framework */,
@@ -458,6 +458,7 @@
 					"$(inherited)",
 					"/Users/jasonsheehan/Desktop/CatFinder/Cat\\ Finder",
 					"/Users/everyoneelse/Desktop/findercat/CatFinder/Cat\\ Finder",
+					/Users/everyoneelse/Desktop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cat Finder/Cat Finder-Prefix.pch";
@@ -476,6 +477,7 @@
 					"$(inherited)",
 					"/Users/jasonsheehan/Desktop/CatFinder/Cat\\ Finder",
 					"/Users/everyoneelse/Desktop/findercat/CatFinder/Cat\\ Finder",
+					/Users/everyoneelse/Desktop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cat Finder/Cat Finder-Prefix.pch";
