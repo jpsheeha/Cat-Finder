@@ -41,10 +41,9 @@
     
 }
 
-- (IBAction)setDateType:(id)sender{
-    
-}
-
+- (IBAction)setDateType:(id)sender{}
+- (IBAction)setGenderPref:(id)sender{}
+- (IBAction)setMinAgePref:(id)sender{}
 - (IBAction)submitButton:(id)sender {
     
     

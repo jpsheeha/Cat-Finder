@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface DatingViewController : UIViewController{
-    BOOL prefMan;
-    BOOL prefW;
-    int dateType;
-    int minAge;
-    int maxAge;
-}
+@interface DatingViewController : UIViewController//{
+//    BOOL prefMan;
+//    BOOL prefW;
+//    int dateType;
+//    int minAge;
+//    int maxAge;
+//}
 
 //items in the page
 @property (weak, nonatomic) IBOutlet UIButton *casualDate;
