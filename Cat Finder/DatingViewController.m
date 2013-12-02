@@ -41,6 +41,10 @@
     
 }
 
+- (IBAction)setDateType:(id)sender{
+    
+}
+
 - (IBAction)submitButton:(id)sender {
     
     
