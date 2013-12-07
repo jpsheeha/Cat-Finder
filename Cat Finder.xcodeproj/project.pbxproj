@@ -38,6 +38,8 @@
 		EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3D728F184BB32200F0DE62 /* DatingViewController.m */; };
 		EF3EA44A184D033600780E7A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3EA449184D033600780E7A /* Parse.framework */; };
 		EF3EA44E184D0CF300780E7A /* FoundDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3EA44C184D0CF300780E7A /* FoundDateController.m */; };
+		EF3EA453184E6C5200780E7A /* DiningHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3EA451184E6C5200780E7A /* DiningHallViewController.m */; };
+		EF3EA454184E6C5200780E7A /* DiningHallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3EA452184E6C5200780E7A /* DiningHallViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,9 @@
 		EF3EA449184D033600780E7A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Desktop/Parse.framework; sourceTree = "<group>"; };
 		EF3EA44B184D0CF300780E7A /* FoundDateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundDateController.h; sourceTree = "<group>"; };
 		EF3EA44C184D0CF300780E7A /* FoundDateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundDateController.m; sourceTree = "<group>"; };
+		EF3EA450184E6C5200780E7A /* DiningHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiningHallViewController.h; path = "../../Desktop/RJT/RJT/Cat-Finder-master/DiningHallViewController.h"; sourceTree = "<group>"; };
+		EF3EA451184E6C5200780E7A /* DiningHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiningHallViewController.m; path = "../../Desktop/RJT/RJT/Cat-Finder-master/DiningHallViewController.m"; sourceTree = "<group>"; };
+		EF3EA452184E6C5200780E7A /* DiningHallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiningHallViewController.xib; path = "../../Desktop/RJT/RJT/Cat-Finder-master/DiningHallViewController.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +198,10 @@
 				318738A518417B5E00DCBF9D /* ViewController.h */,
 				318738A618417B5E00DCBF9D /* ViewController.m */,
 				318738A818417B5E00DCBF9D /* Images.xcassets */,
+				EF3EA450184E6C5200780E7A /* DiningHallViewController.h */,
+				EF3EA451184E6C5200780E7A /* DiningHallViewController.m */,
 				3187389718417B5E00DCBF9D /* Supporting Files */,
+				EF3EA452184E6C5200780E7A /* DiningHallViewController.xib */,
 			);
 			path = "Cat Finder";
 			sourceTree = "<group>";
@@ -305,6 +313,7 @@
 			files = (
 				318738A918417B5E00DCBF9D /* Images.xcassets in Resources */,
 				3187389B18417B5E00DCBF9D /* InfoPlist.strings in Resources */,
+				EF3EA454184E6C5200780E7A /* DiningHallViewController.xib in Resources */,
 				318738A418417B5E00DCBF9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +337,7 @@
 				318738DB18418B9700DCBF9D /* LoginViewController.m in Sources */,
 				EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */,
 				318738A718417B5E00DCBF9D /* ViewController.m in Sources */,
+				EF3EA453184E6C5200780E7A /* DiningHallViewController.m in Sources */,
 				318738E11841CCAD00DCBF9D /* CatCell.m in Sources */,
 				318738DE1841A33C00DCBF9D /* EditProfileViewController.m in Sources */,
 				EF3EA44E184D0CF300780E7A /* FoundDateController.m in Sources */,

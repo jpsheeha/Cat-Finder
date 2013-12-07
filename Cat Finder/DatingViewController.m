@@ -8,7 +8,6 @@
 
 #import "DatingViewController.h"
 #import <Parse/Parse.h>
-#import "LoginViewController.h"
 
 @interface DatingViewController ()
 
@@ -47,7 +46,9 @@
 - (IBAction)submitButton:(UIButton*)sender {
     PFObject *newDateObject = [PFObject objectWithClassName:@"FindDate"];
     //current user
-    [newDateObject setObject:[PFUser currentUser].objectId forKey: @"userID"];
+    PFUser *currentUser = [PFUser currentUser];
+    [newDateObject setObject:currentUser.objectId forKey: @"userID"];
+    //newDateObject[@"userName"] = [PFUser]currentUser.;
     //date type
     NSNumber *DType = [NSNumber numberWithInteger:_dateType.selectedSegmentIndex];
     newDateObject[@"type"] = DType;
@@ -76,10 +77,17 @@
     
     NSNumber *maxAge = [NSNumber numberWithInteger:_sliderMaxAge.value];
     newDateObject[@"maxAge"] = maxAge;
-    
-    //[newDateObject setObject:_dateType.selectedSegmentIndex forKey:@"type"];
-    //ßßßß[newDateObject setObject:_dateType.selectedSegmentIndex forKey:@"type"];
+
     [newDateObject save];
+    
+    //search for other dates that match
+    //create query
+    PFQuery *query = [PFQuery queryWithClassName:@"FindDate"];
+ 
+    
+    //enter matches into match DB
+    
+
     
     
     
