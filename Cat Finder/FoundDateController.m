@@ -14,6 +14,8 @@
 
 @implementation FoundDateController
 
+@synthesize matchTable;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,7 +29,38 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self performSelector:@selector(retrieveFromParse)];
 }
+
+
+- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"FindDate"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects]; } [matchTable reloadData]; }]; }
+
+//get number of sections in tableView from cats array
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //Return the number of sections.
+    return 1;
+}
+
+//get number of rows by counting number of cats
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return matchArray.count;
+}
+
+
+//setup cells in tableView
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //setup cell
+    static NSString *CellIdentifier = @"catListCell";
+    CatCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
+    cell.catLocation.text = [tempObject objectForKey:@"objectId"];
+    
+    return cell;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

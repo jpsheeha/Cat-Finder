@@ -42,6 +42,16 @@
     
 }
 
+-(void)getDates{
+    PFQuery *retrieveDates = [PFQuery queryWithClassName:@"FindDate"];
+    [retrieveDates findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            datesArray = [[NSArray alloc] initWithArray:objects];
+        }
+       // [datesArray reloadData];
+    }];
+}
+
 
 - (IBAction)submitButton:(UIButton*)sender {
     PFObject *newDateObject = [PFObject objectWithClassName:@"FindDate"];
@@ -82,7 +92,7 @@
     
     //search for other dates that match
     //create query
-    PFQuery *query = [PFQuery queryWithClassName:@"FindDate"];
+   
  
     
     //enter matches into match DB

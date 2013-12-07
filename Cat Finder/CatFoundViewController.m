@@ -40,6 +40,7 @@
         if (!error) {
             catsArray = [[NSArray alloc] initWithArray:objects];
         }
+        //catsTable is the name of the table in the found cat page.
         [catsTable reloadData];
     }];
     
