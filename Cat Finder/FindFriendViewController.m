@@ -7,6 +7,7 @@
 //
 
 #import "FindFriendViewController.h"
+#import <Parse/Parse.h>
 
 @interface FindFriendViewController ()
 
@@ -35,4 +36,45 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)submit:(id)sender {
+    
+    //change the thing after the star and rename everything else
+    //change the thing in quotes to the table you want to connect to
+    PFObject *newFriendObject = [PFObject objectWithClassName:@"FindFriend"];
+    //current user - don't change this
+    PFUser *currentUser = [PFUser currentUser];
+    [newFriendObject setObject:currentUser.objectId forKey: @"userId"];
+
+    //hangouttype type
+    NSNumber *type = [NSNumber numberWithInteger:_pickType.selectedSegmentIndex];
+    newFriendObject[@"type"] = type;
+    //female preference
+    NSNumber *M;
+    if(_ManPref.on){
+        M = [NSNumber numberWithInt:(1)];
+    }
+    else {
+        M = [NSNumber numberWithInt:(0)];
+    }
+    newFriendObject[@"M"] = M;
+    
+    //male preference
+    NSNumber *W;
+    if(_WomanPref.on){
+        W = [NSNumber numberWithInt:(1)];
+    }
+    else {
+        W = [NSNumber numberWithInt:(0)];
+    }
+    newFriendObject[@"W"] = W;
+    
+    NSNumber *minAge = [NSNumber numberWithInteger:_MinAge.value];
+    newFriendObject[@"minAge"] = minAge;
+    
+    NSNumber *maxAge = [NSNumber numberWithInteger:_MaxAge.value];
+    newFriendObject[@"maxAge"] = maxAge;
+    
+    [newFriendObject save];
+    
+}
 @end

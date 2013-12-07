@@ -36,6 +36,9 @@
 		318738E71841D38E00DCBF9D /* CatFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318738E61841D38E00DCBF9D /* CatFoundViewController.m */; };
 		318738EA1841ED2900DCBF9D /* CatSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318738E91841ED2900DCBF9D /* CatSubmitViewController.m */; };
 		EF0DFDAC18539F10000FECE2 /* FindFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0DFDAB18539F10000FECE2 /* FindFriendViewController.m */; };
+		EF19BBB91853D57500D3381B /* FoundFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBB81853D57500D3381B /* FoundFriend.m */; };
+		EF19BBC21853DF1900D3381B /* StuddyBuddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBC11853DF1900D3381B /* StuddyBuddyViewController.m */; };
+		EF19BBC51853E11900D3381B /* StudyBuddyFoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBC41853E11900D3381B /* StudyBuddyFoundController.m */; };
 		EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3D728F184BB32200F0DE62 /* DatingViewController.m */; };
 		EF3EA44A184D033600780E7A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3EA449184D033600780E7A /* Parse.framework */; };
 		EF3EA44E184D0CF300780E7A /* FoundDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3EA44C184D0CF300780E7A /* FoundDateController.m */; };
@@ -92,6 +95,12 @@
 		318738E91841ED2900DCBF9D /* CatSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatSubmitViewController.m; sourceTree = "<group>"; };
 		EF0DFDAA18539F10000FECE2 /* FindFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindFriendViewController.h; sourceTree = "<group>"; };
 		EF0DFDAB18539F10000FECE2 /* FindFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindFriendViewController.m; sourceTree = "<group>"; };
+		EF19BBB71853D57500D3381B /* FoundFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoundFriend.h; path = ../FoundFriend.h; sourceTree = "<group>"; };
+		EF19BBB81853D57500D3381B /* FoundFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoundFriend.m; path = ../FoundFriend.m; sourceTree = "<group>"; };
+		EF19BBC01853DF1900D3381B /* StuddyBuddyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuddyBuddyViewController.h; sourceTree = "<group>"; };
+		EF19BBC11853DF1900D3381B /* StuddyBuddyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuddyBuddyViewController.m; sourceTree = "<group>"; };
+		EF19BBC31853E11900D3381B /* StudyBuddyFoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyBuddyFoundController.h; path = ../StudyBuddyFoundController.h; sourceTree = "<group>"; };
+		EF19BBC41853E11900D3381B /* StudyBuddyFoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyBuddyFoundController.m; path = ../StudyBuddyFoundController.m; sourceTree = "<group>"; };
 		EF3D728E184BB32200F0DE62 /* DatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatingViewController.h; sourceTree = "<group>"; };
 		EF3D728F184BB32200F0DE62 /* DatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatingViewController.m; sourceTree = "<group>"; };
 		EF3EA449184D033600780E7A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Desktop/Parse.framework; sourceTree = "<group>"; };
@@ -193,10 +202,16 @@
 				318738DA18418B9700DCBF9D /* LoginViewController.m */,
 				EF3EA44B184D0CF300780E7A /* FoundDateController.h */,
 				EF3EA44C184D0CF300780E7A /* FoundDateController.m */,
+				EF19BBB71853D57500D3381B /* FoundFriend.h */,
+				EF19BBB81853D57500D3381B /* FoundFriend.m */,
 				318738A518417B5E00DCBF9D /* ViewController.h */,
 				318738A618417B5E00DCBF9D /* ViewController.m */,
 				EF0DFDAA18539F10000FECE2 /* FindFriendViewController.h */,
 				EF0DFDAB18539F10000FECE2 /* FindFriendViewController.m */,
+				EF19BBC01853DF1900D3381B /* StuddyBuddyViewController.h */,
+				EF19BBC11853DF1900D3381B /* StuddyBuddyViewController.m */,
+				EF19BBC31853E11900D3381B /* StudyBuddyFoundController.h */,
+				EF19BBC41853E11900D3381B /* StudyBuddyFoundController.m */,
 				318738A818417B5E00DCBF9D /* Images.xcassets */,
 				3187389718417B5E00DCBF9D /* Supporting Files */,
 			);
@@ -329,6 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF19BBB91853D57500D3381B /* FoundFriend.m in Sources */,
+				EF19BBC51853E11900D3381B /* StudyBuddyFoundController.m in Sources */,
 				318738E71841D38E00DCBF9D /* CatFoundViewController.m in Sources */,
 				318738DB18418B9700DCBF9D /* LoginViewController.m in Sources */,
 				EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */,
@@ -338,6 +355,7 @@
 				EF3EA44E184D0CF300780E7A /* FoundDateController.m in Sources */,
 				318738A118417B5E00DCBF9D /* AppDelegate.m in Sources */,
 				EF0DFDAC18539F10000FECE2 /* FindFriendViewController.m in Sources */,
+				EF19BBC21853DF1900D3381B /* StuddyBuddyViewController.m in Sources */,
 				3187389D18417B5E00DCBF9D /* main.m in Sources */,
 				318738EA1841ED2900DCBF9D /* CatSubmitViewController.m in Sources */,
 			);
