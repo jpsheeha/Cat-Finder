@@ -37,39 +37,16 @@
 }
 
 
-<<<<<<< HEAD
-- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"FindDate"];
-=======
 - (void) retrieveFromParse {
+    PFQuery *retrieveDates = [PFQuery queryWithClassName:@"Dates"];
     
-    
-    
-    ////////test
-    //PFQuery *dateMatch = [PFQuery queryWithClassName:@"FindDate"];
-    // NSString *dM;
-    //dM = @"male";
-    
-    
-    
-    //PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"_User"];
-    //[retrieveMatches whereKey:@"gender" equalTo:dM];
-    
-    
-    
-    ///////
-    
-    
-    
-    PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"_User"];
-    [retrieveMatches whereKey:@"gender" equalTo:@"female"];
-    
-    
-    
-    
->>>>>>> 9b8e0adab8e17fef13b10f5db94a0205dfcde82f
-    [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
-    { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects];}
-        [matchTable reloadData]; }];
+    [retrieveDates findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            matchArray = [[NSArray alloc] initWithArray:objects];
+        }
+        //match is the name of the table in the found match page.
+        [matchTable reloadData];
+    }];
     
 }
 
@@ -84,20 +61,15 @@
     return matchArray.count;
 }
 
-
 //setup cells in tableView
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //setup cell
-    static NSString *CellIdentifier = @"dateListCell";
+    static NSString *CellIdentifier = @"matchListCell";
     DateCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
-<<<<<<< HEAD
-    cell.dateMatch.text = [tempObject objectForKey:@"userID"];
-=======
-    cell.dateMatch.text = [tempObject objectForKey:@"firstName"];
->>>>>>> 9b8e0adab8e17fef13b10f5db94a0205dfcde82f
+    cell.dateMatch.text = [tempObject objectForKey:@"username2"];
     
     return cell;
 }
@@ -108,5 +80,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

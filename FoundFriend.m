@@ -7,6 +7,7 @@
 //
 
 #import "FoundFriend.h"
+#import <Parse/Parse.h>
 
 @interface FoundFriend ()
 
@@ -34,7 +35,7 @@
 }
 
 
-- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"FindFriend"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects]; } [matchTable reloadData]; }]; }
+- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"FriendMatches"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects]; } [matchTable reloadData]; }]; }
 
 //get number of sections in tableView from cats array
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

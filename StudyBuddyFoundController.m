@@ -8,9 +8,9 @@
 
 #import "StudyBuddyFoundController.h"
 
-/*@interface StudyBuddyFOundController ()
+@interface StudyBuddyFoundController ()
 
-@end */
+@end
 
 @implementation StudyBuddyFoundController
 
@@ -34,7 +34,7 @@
 }
 
 
-- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"StudyBuddyFound"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects]; } [matchTable reloadData]; }]; }
+- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"StudyBuddyMatches"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects]; } [matchTable reloadData]; }]; }
 
 //get number of sections in tableView from cats array
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -52,11 +52,11 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //setup cell
-    static NSString *CellIdentifier = @"catListCell";
-    CatCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"buddyListCell";
+    StudyBuddyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
-    cell.catLocation.text = [tempObject objectForKey:@"objectId"];
+    cell.buddy.text = [tempObject objectForKey:@"objectId"];
     
     return cell;
 }

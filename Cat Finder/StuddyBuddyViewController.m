@@ -36,6 +36,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)ReturnKeyButton:(id)sender {
+    
+    [sender resignFirstResponder];
+    
+}
+
 -(IBAction)submit:(id)sender{
     PFObject *newStuddyBuddyObject = [PFObject objectWithClassName:@"FindStudyBuddy"];
     //current user
@@ -63,20 +69,26 @@
         }
 
     }];
-    
-    NSString *class = [course stringByAppendingString:courseNum];
-    
-    for (id object in studyBuddyArray) {
-        PFObject *newStudyBuddyMatch = [PFObject objectWithClassName:@"StudyBuddyMatches"];
-        
-        newStudyBuddyMatch[@"course"] = class;
-        newStudyBuddyMatch[@"usr1"] = currentUser.username;
-        newStudyBuddyMatch[@"usr2"] object;
 
-        
-    }
+
     
     
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

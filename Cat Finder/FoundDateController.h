@@ -15,6 +15,11 @@
 }
 
 
+
+
 @property (weak, nonatomic) IBOutlet UITableView *matchTable;
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+- (void)didReceiveMemoryWarning;
 
 @end

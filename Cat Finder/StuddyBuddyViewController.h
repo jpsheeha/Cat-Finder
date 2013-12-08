@@ -11,12 +11,12 @@
 @interface StuddyBuddyViewController : UIViewController{
     NSArray *studyBuddyArray;
 }
-
 @property (weak, nonatomic) IBOutlet UITextField *c;
-
 @property (weak, nonatomic) IBOutlet UITextField *cN;
 
+
 -(IBAction)submit:(id)sender;
+
 
 @end
 
