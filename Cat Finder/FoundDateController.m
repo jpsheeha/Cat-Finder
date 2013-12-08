@@ -30,11 +30,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    
+    
+    
     [self performSelector:@selector(retrieveFromParse)];
 }
 
 
-- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"FindDate"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects]; } [matchTable reloadData]; }]; }
+- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"FindDate"];
+    [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+    { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects];}
+        [matchTable reloadData]; }];
+    
+}
 
 //get number of sections in tableView from cats array
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -52,11 +60,11 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //setup cell
-    static NSString *CellIdentifier = @"catListCell";
-    CatCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"dateListCell";
+    DateCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
-    cell.catLocation.text = [tempObject objectForKey:@"objectId"];
+    cell.dateMatch.text = [tempObject objectForKey:@"userID"];
     
     return cell;
 }

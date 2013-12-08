@@ -92,8 +92,19 @@
     
     //search for other dates that match
     //create query
-   
- 
+    //create query
+    
+    PFQuery *dateQuery = [PFQuery queryWithClassName:@"FindDate"];
+    [dateQuery whereKey:@"type" equalTo:DType];
+    [dateQuery whereKey:@"gender" equalTo:[PFObject objectWithoutDataWithClassName:@"User" objectId: currentUser.objectId]];
+    
+    [dateQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            datesArray = [[NSArray alloc] initWithArray:objects];
+        }
+        //catsTable is the name of the table in the found cat page.
+       
+    }];
     
     //enter matches into match DB
     

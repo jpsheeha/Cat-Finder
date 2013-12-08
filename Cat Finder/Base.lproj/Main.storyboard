@@ -794,48 +794,6 @@
             </objects>
             <point key="canvasLocation" x="1623" y="456"/>
         </scene>
-        <!--View Controller - Dining Hall-->
-        <scene sceneID="YwC-k0-pJp">
-            <objects>
-                <viewController title="Dining Hall" id="OsQ-Qg-byB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YTw-sV-q0F"/>
-                        <viewControllerLayoutGuide type="bottom" id="GsZ-rb-7qN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="g9c-Yn-oRx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sh-kE-3fI">
-                                <rect key="frame" x="15" y="20" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h6J-T3-TTe">
-                                <rect key="frame" x="34" y="84" width="252" height="400"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWV-aJ-7T5">
-                                <rect key="frame" x="231" y="20" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="SPQ-d4-QA8" kind="push" id="wJG-Cc-UfG"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bPD-gR-LnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2572" y="-109"/>
-        </scene>
         <!--Found Date Controller-->
         <scene sceneID="70N-12-2c7">
             <objects>
@@ -873,7 +831,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8Pe-5X-JBA">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dateListCell" id="8Pe-5X-JBA" customClass="DateCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Pe-5X-JBA" id="PLU-3I-pLc">
@@ -889,8 +847,15 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateMatch" destination="l5B-05-5Ow" id="vyP-m5-sEG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lvc-X0-HJp" id="3uu-ga-Dcn"/>
+                                    <outlet property="delegate" destination="lvc-X0-HJp" id="q7G-CX-0sP"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Found these dates:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itA-Td-dl7">
                                 <rect key="frame" x="86" y="84" width="148" height="21"/>
@@ -902,6 +867,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vtd-KK-BNY"/>
+                    <connections>
+                        <outlet property="matchTable" destination="CUn-se-I0W" id="dIA-V3-L46"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNt-Cw-7Y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -915,8 +883,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ezs-iu-8ty"/>
-        <segue reference="g0r-iF-89K"/>
-        <segue reference="zDJ-E1-M1k"/>
-        <segue reference="F8Z-pD-h3k"/>
+        <segue reference="QTj-2I-h2M"/>
+        <segue reference="yuo-LV-Rd3"/>
+        <segue reference="Gtt-eA-dnn"/>
     </inferredMetricsTieBreakers>
 </document>
