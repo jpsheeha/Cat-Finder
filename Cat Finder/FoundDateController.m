@@ -37,7 +37,32 @@
 }
 
 
-- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"FindDate"];
+- (void) retrieveFromParse {
+    
+    
+    
+    ////////test
+    //PFQuery *dateMatch = [PFQuery queryWithClassName:@"FindDate"];
+    // NSString *dM;
+    //dM = @"male";
+    
+    
+    
+    //PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"_User"];
+    //[retrieveMatches whereKey:@"gender" equalTo:dM];
+    
+    
+    
+    ///////
+    
+    
+    
+    PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"_User"];
+    [retrieveMatches whereKey:@"gender" equalTo:@"female"];
+    
+    
+    
+    
     [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
     { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects];}
         [matchTable reloadData]; }];
@@ -64,7 +89,7 @@
     DateCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
-    cell.dateMatch.text = [tempObject objectForKey:@"userID"];
+    cell.dateMatch.text = [tempObject objectForKey:@"firstName"];
     
     return cell;
 }
