@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "CatCell.h"
+#import "DateCell.h"
 
 @interface FoundDateController : UIViewController <UITableViewDelegate>{
     NSArray *matchArray;
 }
+
 
 @property (weak, nonatomic) IBOutlet UITableView *matchTable;
 

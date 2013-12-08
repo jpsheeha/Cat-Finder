@@ -41,6 +41,7 @@
     //current user
     PFUser *currentUser = [PFUser currentUser];
     [newStuddyBuddyObject setObject:currentUser.objectId forKey: @"userID"];
+    newStuddyBuddyObject[@"usrName"] = currentUser.username;
     
     NSString *course = _c.text;
     newStuddyBuddyObject[@"course"] = course;
@@ -52,6 +53,28 @@
 
     
     [newStuddyBuddyObject save];
+    
+    PFQuery *studyBuddyquery = [PFQuery queryWithClassName:@"FindStudyBuddy"];
+    [studyBuddyquery whereKey:@"course" equalTo:course];
+    [studyBuddyquery whereKey:@"courseNumber" equalTo:courseNum];
+    [studyBuddyquery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            studyBuddyArray = [[NSArray alloc] initWithArray:objects];
+        }
+
+    }];
+    
+    NSString *class = [course stringByAppendingString:courseNum];
+    
+    for (id object in studyBuddyArray) {
+        PFObject *newStudyBuddyMatch = [PFObject objectWithClassName:@"StudyBuddyMatches"];
+        
+        newStudyBuddyMatch[@"course"] = class;
+        newStudyBuddyMatch[@"usr1"] = currentUser.username;
+        newStudyBuddyMatch[@"usr2"] object;
+
+        
+    }
     
     
 }

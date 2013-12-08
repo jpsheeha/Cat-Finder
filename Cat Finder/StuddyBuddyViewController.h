@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StuddyBuddyViewController : UIViewController
+@interface StuddyBuddyViewController : UIViewController{
+    NSArray *studyBuddyArray;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *c;
 
