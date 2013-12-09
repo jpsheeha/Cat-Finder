@@ -867,7 +867,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submitButton:" destination="GAp-ax-Yj9" eventType="touchUpInside" id="IKM-AR-T1u"/>
-                                    <segue destination="lvc-X0-HJp" kind="modal" id="a9m-Cq-eVN"/>
+                                    <segue destination="yl6-jU-SDo" kind="modal" id="C1U-y1-aCg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find A Date!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlb-62-5ga">
@@ -940,7 +940,6 @@
                         <outlet property="dateWoman" destination="mpY-5U-rap" id="19d-50-gRd"/>
                         <outlet property="sliderMaxAge" destination="luE-sm-Ych" id="rDz-Xq-t0V"/>
                         <outlet property="sliderMinAge" destination="xbb-P2-kmX" id="pab-oU-Nwh"/>
-                        <outlet property="submitButton" destination="VKp-Ha-aIr" id="LdJ-DV-Jdi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy5-l1-S6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -948,83 +947,74 @@
             <point key="canvasLocation" x="1096" y="652"/>
         </scene>
         <!--Found Date Controller-->
-        <scene sceneID="70N-12-2c7">
+        <scene sceneID="fia-9s-tL9">
             <objects>
-                <viewController storyboardIdentifier="FoundDateController" id="lvc-X0-HJp" customClass="FoundDateController" sceneMemberID="viewController">
+                <viewController id="yl6-jU-SDo" customClass="FoundDateController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DBe-Ol-im3"/>
-                        <viewControllerLayoutGuide type="bottom" id="o5b-cT-JQ0"/>
+                        <viewControllerLayoutGuide type="top" id="03k-67-6pE"/>
+                        <viewControllerLayoutGuide type="bottom" id="k2B-Xn-kGQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rvQ-fI-l1L">
+                    <view key="view" contentMode="scaleToFill" id="pee-fb-bkh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsh-1S-PCy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeR-PQ-0Jc">
                                 <rect key="frame" x="20" y="20" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GAp-ax-Yj9" kind="modal" id="Gtt-eA-dnn"/>
+                                    <segue destination="GAp-ax-Yj9" kind="modal" id="PYG-ki-q5N"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MG4-ID-Dmy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-Vv-RCs">
                                 <rect key="frame" x="254" y="20" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SPQ-d4-QA8" kind="modal" id="yuo-LV-Rd3"/>
+                                    <segue destination="SPQ-d4-QA8" kind="modal" id="CUf-gN-OB2"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CUn-se-I0W">
-                                <rect key="frame" x="0.0" y="153" width="320" height="415"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Matches" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-b7-2bf">
+                                <rect key="frame" x="105" y="51" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QFS-qK-DvW">
+                                <rect key="frame" x="20" y="95" width="280" height="446"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dateListCell" id="8Pe-5X-JBA" customClass="DateCell">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WgV-NS-FMy" customClass="DateCell">
+                                        <rect key="frame" x="0.0" y="22" width="280" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Pe-5X-JBA" id="PLU-3I-pLc">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WgV-NS-FMy" id="Vw2-gc-G9K">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Match" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5B-05-5Ow">
-                                                    <rect key="frame" x="10" y="11" width="89" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date matches" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1V-lT-wD0">
+                                                    <rect key="frame" x="20" y="11" width="116" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="dateMatch" destination="l5B-05-5Ow" id="vyP-m5-sEG"/>
+                                            <outlet property="dateMatch" destination="N1V-lT-wD0" id="Zt9-L3-8Kg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="lvc-X0-HJp" id="3uu-ga-Dcn"/>
-                                    <outlet property="delegate" destination="lvc-X0-HJp" id="q7G-CX-0sP"/>
-                                </connections>
                             </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Found these dates:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itA-Td-dl7">
-                                <rect key="frame" x="86" y="84" width="148" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Vtd-KK-BNY"/>
-                    <connections>
-                        <outlet property="matchTable" destination="CUn-se-I0W" id="dIA-V3-L46"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FNt-Cw-7Y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXN-hx-rfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1544" y="652"/>
         </scene>
@@ -1036,10 +1026,10 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="wQk-IO-p50"/>
+        <segue reference="PYG-ki-q5N"/>
+        <segue reference="CUf-gN-OB2"/>
         <segue reference="ezs-iu-8ty"/>
         <segue reference="QTj-2I-h2M"/>
-        <segue reference="Gtt-eA-dnn"/>
-        <segue reference="yuo-LV-Rd3"/>
         <segue reference="q5m-Jj-cpf"/>
         <segue reference="RN4-PG-UIN"/>
     </inferredMetricsTieBreakers>

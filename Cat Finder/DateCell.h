@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DateCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *dateMatch;
 
 
