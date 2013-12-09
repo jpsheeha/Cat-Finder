@@ -11,13 +11,13 @@
 #import "DateCell.h"
 
 @interface FoundDateController : UIViewController <UITableViewDelegate>{
-    NSArray *matchArray;
+    NSArray *matchesArray;
 }
 
 
 
+@property (weak, nonatomic) IBOutlet UITableView *matchesTable;
 
-@property (weak, nonatomic) IBOutlet UITableView *matchTable;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
 - (void)didReceiveMemoryWarning;

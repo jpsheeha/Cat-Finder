@@ -14,7 +14,7 @@
 
 @implementation StudyBuddyFoundController
 
-@synthesize matchTable;
+@synthesize buddyTable;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +34,7 @@
 }
 
 
-- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"StudyBuddyMatches"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { matchArray = [[NSArray alloc] initWithArray:objects]; } [matchTable reloadData]; }]; }
+- (void) retrieveFromParse { PFQuery *retrieveMatches = [PFQuery queryWithClassName:@"StudyBuddyMatches"]; [retrieveMatches findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) { if (!error) { buddyArray = [[NSArray alloc] initWithArray:objects]; } [buddyTable reloadData]; }]; }
 
 //get number of sections in tableView from cats array
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -44,7 +44,7 @@
 
 //get number of rows by counting number of cats
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return matchArray.count;
+    return buddyArray.count;
 }
 
 
@@ -55,8 +55,8 @@
     static NSString *CellIdentifier = @"buddyListCell";
     StudyBuddyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
-    cell.buddy.text = [tempObject objectForKey:@"objectId"];
+    NSDictionary *tempObject = [buddyArray objectAtIndex:indexPath.row];
+    cell.buddyTitle.text = [tempObject objectForKey:@"email"];
     
     return cell;
 }

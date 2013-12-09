@@ -11,9 +11,14 @@
 #import "StudyBuddyCell.h"
 
 @interface StudyBuddyFoundController : UIViewController <UITableViewDelegate>{
-    NSArray *matchArray;
+    NSArray *buddyArray;
 }
 
-@property (weak, nonatomic) IBOutlet UITableView *matchTable;
+@property (weak, nonatomic) IBOutlet UITableView *buddyTable;
+
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+- (void)didReceiveMemoryWarning;
 
 @end

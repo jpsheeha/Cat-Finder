@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		316CC00F185583B00013C971 /* DateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC00E185583B00013C971 /* DateCell.m */; };
+		316CC01218558C850013C971 /* FoundFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC01118558C850013C971 /* FoundFriendViewController.m */; };
+		316CC015185593490013C971 /* StuddyBuddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC014185593490013C971 /* StuddyBuddyViewController.m */; };
+		316CC0181855958B0013C971 /* StudyBuddyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 316CC0171855958B0013C971 /* StudyBuddyCell.m */; };
 		3187389118417B5E00DCBF9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3187389018417B5E00DCBF9D /* Foundation.framework */; };
 		3187389318417B5E00DCBF9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3187389218417B5E00DCBF9D /* CoreGraphics.framework */; };
 		3187389518417B5E00DCBF9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3187389418417B5E00DCBF9D /* UIKit.framework */; };
@@ -36,12 +40,8 @@
 		318738E71841D38E00DCBF9D /* CatFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318738E61841D38E00DCBF9D /* CatFoundViewController.m */; };
 		318738EA1841ED2900DCBF9D /* CatSubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318738E91841ED2900DCBF9D /* CatSubmitViewController.m */; };
 		EF0DFDAC18539F10000FECE2 /* FindFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0DFDAB18539F10000FECE2 /* FindFriendViewController.m */; };
-		EF19BBB91853D57500D3381B /* FoundFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBB81853D57500D3381B /* FoundFriend.m */; };
-		EF19BBC21853DF1900D3381B /* StuddyBuddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBC11853DF1900D3381B /* StuddyBuddyViewController.m */; };
 		EF19BBC51853E11900D3381B /* StudyBuddyFoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBC41853E11900D3381B /* StudyBuddyFoundController.m */; };
-		EF19BBC81853EDB700D3381B /* DateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBC71853EDB700D3381B /* DateCell.m */; };
 		EF19BBCB185522D900D3381B /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBCA185522D900D3381B /* FriendCell.m */; };
-		EF19BBCE185522EC00D3381B /* StudyBuddyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19BBCD185522EC00D3381B /* StudyBuddyCell.m */; };
 		EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3D728F184BB32200F0DE62 /* DatingViewController.m */; };
 		EF3EA44A184D033600780E7A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3EA449184D033600780E7A /* Parse.framework */; };
 		EF3EA44E184D0CF300780E7A /* FoundDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3EA44C184D0CF300780E7A /* FoundDateController.m */; };
@@ -58,6 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		316CC00D185583B00013C971 /* DateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateCell.h; path = ../DateCell.h; sourceTree = "<group>"; };
+		316CC00E185583B00013C971 /* DateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateCell.m; path = ../DateCell.m; sourceTree = "<group>"; };
+		316CC01018558C850013C971 /* FoundFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundFriendViewController.h; sourceTree = "<group>"; };
+		316CC01118558C850013C971 /* FoundFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundFriendViewController.m; sourceTree = "<group>"; };
+		316CC013185593390013C971 /* StuddyBuddyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StuddyBuddyViewController.h; sourceTree = "<group>"; };
+		316CC014185593490013C971 /* StuddyBuddyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuddyBuddyViewController.m; sourceTree = "<group>"; };
+		316CC0161855958B0013C971 /* StudyBuddyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyBuddyCell.h; path = ../StudyBuddyCell.h; sourceTree = "<group>"; };
+		316CC0171855958B0013C971 /* StudyBuddyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyBuddyCell.m; path = ../StudyBuddyCell.m; sourceTree = "<group>"; };
 		3187388D18417B5E00DCBF9D /* Cat Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3187389018417B5E00DCBF9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3187389218417B5E00DCBF9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,18 +106,10 @@
 		318738E91841ED2900DCBF9D /* CatSubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatSubmitViewController.m; sourceTree = "<group>"; };
 		EF0DFDAA18539F10000FECE2 /* FindFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindFriendViewController.h; sourceTree = "<group>"; };
 		EF0DFDAB18539F10000FECE2 /* FindFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindFriendViewController.m; sourceTree = "<group>"; };
-		EF19BBB71853D57500D3381B /* FoundFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoundFriend.h; path = ../FoundFriend.h; sourceTree = "<group>"; };
-		EF19BBB81853D57500D3381B /* FoundFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoundFriend.m; path = ../FoundFriend.m; sourceTree = "<group>"; };
-		EF19BBC01853DF1900D3381B /* StuddyBuddyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuddyBuddyViewController.h; sourceTree = "<group>"; };
-		EF19BBC11853DF1900D3381B /* StuddyBuddyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuddyBuddyViewController.m; sourceTree = "<group>"; };
 		EF19BBC31853E11900D3381B /* StudyBuddyFoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyBuddyFoundController.h; path = ../StudyBuddyFoundController.h; sourceTree = "<group>"; };
 		EF19BBC41853E11900D3381B /* StudyBuddyFoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyBuddyFoundController.m; path = ../StudyBuddyFoundController.m; sourceTree = "<group>"; };
-		EF19BBC61853EDB700D3381B /* DateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCell.h; sourceTree = "<group>"; };
-		EF19BBC71853EDB700D3381B /* DateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCell.m; sourceTree = "<group>"; };
 		EF19BBC9185522D900D3381B /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
 		EF19BBCA185522D900D3381B /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
-		EF19BBCC185522EC00D3381B /* StudyBuddyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyBuddyCell.h; sourceTree = "<group>"; };
-		EF19BBCD185522EC00D3381B /* StudyBuddyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyBuddyCell.m; sourceTree = "<group>"; };
 		EF3D728E184BB32200F0DE62 /* DatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatingViewController.h; sourceTree = "<group>"; };
 		EF3D728F184BB32200F0DE62 /* DatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatingViewController.m; sourceTree = "<group>"; };
 		EF3EA449184D033600780E7A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Desktop/Parse.framework; sourceTree = "<group>"; };
@@ -195,6 +195,12 @@
 			isa = PBXGroup;
 			children = (
 				318738A218417B5E00DCBF9D /* Main.storyboard */,
+				316CC0161855958B0013C971 /* StudyBuddyCell.h */,
+				316CC0171855958B0013C971 /* StudyBuddyCell.m */,
+				316CC01018558C850013C971 /* FoundFriendViewController.h */,
+				316CC01118558C850013C971 /* FoundFriendViewController.m */,
+				316CC00D185583B00013C971 /* DateCell.h */,
+				316CC00E185583B00013C971 /* DateCell.m */,
 				3187389F18417B5E00DCBF9D /* AppDelegate.h */,
 				318738A018417B5E00DCBF9D /* AppDelegate.m */,
 				318738A518417B5E00DCBF9D /* ViewController.h */,
@@ -207,8 +213,6 @@
 				EF3D728F184BB32200F0DE62 /* DatingViewController.m */,
 				EF3EA44B184D0CF300780E7A /* FoundDateController.h */,
 				EF3EA44C184D0CF300780E7A /* FoundDateController.m */,
-				EF19BBC61853EDB700D3381B /* DateCell.h */,
-				EF19BBC71853EDB700D3381B /* DateCell.m */,
 				318738E51841D38E00DCBF9D /* CatFoundViewController.h */,
 				318738E61841D38E00DCBF9D /* CatFoundViewController.m */,
 				318738E81841ED2900DCBF9D /* CatSubmitViewController.h */,
@@ -217,16 +221,12 @@
 				318738E01841CCAD00DCBF9D /* CatCell.m */,
 				EF0DFDAA18539F10000FECE2 /* FindFriendViewController.h */,
 				EF0DFDAB18539F10000FECE2 /* FindFriendViewController.m */,
-				EF19BBB71853D57500D3381B /* FoundFriend.h */,
-				EF19BBB81853D57500D3381B /* FoundFriend.m */,
 				EF19BBC9185522D900D3381B /* FriendCell.h */,
 				EF19BBCA185522D900D3381B /* FriendCell.m */,
-				EF19BBC01853DF1900D3381B /* StuddyBuddyViewController.h */,
-				EF19BBC11853DF1900D3381B /* StuddyBuddyViewController.m */,
+				316CC013185593390013C971 /* StuddyBuddyViewController.h */,
+				316CC014185593490013C971 /* StuddyBuddyViewController.m */,
 				EF19BBC31853E11900D3381B /* StudyBuddyFoundController.h */,
 				EF19BBC41853E11900D3381B /* StudyBuddyFoundController.m */,
-				EF19BBCC185522EC00D3381B /* StudyBuddyCell.h */,
-				EF19BBCD185522EC00D3381B /* StudyBuddyCell.m */,
 				318738A818417B5E00DCBF9D /* Images.xcassets */,
 				3187389718417B5E00DCBF9D /* Supporting Files */,
 			);
@@ -359,20 +359,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF19BBB91853D57500D3381B /* FoundFriend.m in Sources */,
 				EF19BBC51853E11900D3381B /* StudyBuddyFoundController.m in Sources */,
 				318738E71841D38E00DCBF9D /* CatFoundViewController.m in Sources */,
 				318738DB18418B9700DCBF9D /* LoginViewController.m in Sources */,
 				EF3D7290184BB32200F0DE62 /* DatingViewController.m in Sources */,
+				316CC01218558C850013C971 /* FoundFriendViewController.m in Sources */,
 				318738A718417B5E00DCBF9D /* ViewController.m in Sources */,
-				EF19BBC81853EDB700D3381B /* DateCell.m in Sources */,
 				318738E11841CCAD00DCBF9D /* CatCell.m in Sources */,
 				318738DE1841A33C00DCBF9D /* EditProfileViewController.m in Sources */,
-				EF19BBCE185522EC00D3381B /* StudyBuddyCell.m in Sources */,
 				EF3EA44E184D0CF300780E7A /* FoundDateController.m in Sources */,
+				316CC0181855958B0013C971 /* StudyBuddyCell.m in Sources */,
+				316CC015185593490013C971 /* StuddyBuddyViewController.m in Sources */,
 				318738A118417B5E00DCBF9D /* AppDelegate.m in Sources */,
 				EF0DFDAC18539F10000FECE2 /* FindFriendViewController.m in Sources */,
-				EF19BBC21853DF1900D3381B /* StuddyBuddyViewController.m in Sources */,
+				316CC00F185583B00013C971 /* DateCell.m in Sources */,
 				3187389D18417B5E00DCBF9D /* main.m in Sources */,
 				318738EA1841ED2900DCBF9D /* CatSubmitViewController.m in Sources */,
 				EF19BBCB185522D900D3381B /* FriendCell.m in Sources */,

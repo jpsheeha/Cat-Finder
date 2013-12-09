@@ -14,7 +14,7 @@
 
 @implementation FoundDateController
 
-@synthesize matchTable;
+@synthesize matchesTable;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,10 +42,10 @@
     
     [retrieveDates findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            matchArray = [[NSArray alloc] initWithArray:objects];
+            matchesArray = [[NSArray alloc] initWithArray:objects];
         }
         //match is the name of the table in the found match page.
-        [matchTable reloadData];
+        [matchesTable reloadData];
     }];
     
 }
@@ -58,18 +58,18 @@
 
 //get number of rows by counting number of cats
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return matchArray.count;
+    return matchesArray.count;
 }
 
 //setup cells in tableView
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //setup cell
-    static NSString *CellIdentifier = @"matchListCell";
+    static NSString *CellIdentifier = @"dateList";
     DateCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
-    cell.dateMatch.text = [tempObject objectForKey:@"username2"];
+    NSDictionary *tempObject = [matchesArray objectAtIndex:indexPath.row];
+    cell.datesTitle.text = [tempObject objectForKey:@"email"];
     
     return cell;
 }
