@@ -53,11 +53,11 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //setup cell
-    static NSString *CellIdentifier = @"catListCell";
-    CatCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"friendCell";
+    FriendCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     NSDictionary *tempObject = [matchArray objectAtIndex:indexPath.row];
-    cell.catLocation.text = [tempObject objectForKey:@"objectId"];
+    cell.friend.text = [tempObject objectForKey:@"objectId"];
     
     return cell;
 }

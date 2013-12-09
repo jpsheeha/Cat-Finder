@@ -506,7 +506,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submit:" destination="H88-qC-L2N" eventType="touchUpInside" id="oUc-BZ-BLY"/>
-                                    <segue destination="hbT-dd-vau" kind="modal" id="QcO-ga-a01"/>
+                                    <segue destination="hbT-dd-vau" kind="modal" id="sti-Pe-Aas"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -549,9 +549,17 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lax-Z8-1bi" id="E1D-tj-qcr">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-Ac-l0t">
+                                                    <rect key="frame" x="32" y="11" width="49" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="friend" destination="E1D-tj-qcr" id="q5i-wg-Xcq"/>
+                                            <outlet property="friend" destination="n1Z-Ac-l0t" id="udd-ov-jcY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1031,8 +1039,8 @@
         <segue reference="ezs-iu-8ty"/>
         <segue reference="QTj-2I-h2M"/>
         <segue reference="Gtt-eA-dnn"/>
-        <segue reference="tAQ-xW-hXY"/>
-        <segue reference="RN4-PG-UIN"/>
+        <segue reference="yuo-LV-Rd3"/>
         <segue reference="q5m-Jj-cpf"/>
+        <segue reference="RN4-PG-UIN"/>
     </inferredMetricsTieBreakers>
 </document>

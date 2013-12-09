@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FriendCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIView *friend;
+@property (weak, nonatomic) IBOutlet UILabel *friend;
+
 
 @end

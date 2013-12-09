@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "CatCell.h"
+#import "StudyBuddyCell.h"
 
 @interface StudyBuddyFoundController : UIViewController <UITableViewDelegate>{
     NSArray *matchArray;

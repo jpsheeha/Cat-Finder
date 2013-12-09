@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "CatCell.h"
+#import "FriendCell.h"
 
 @interface FoundFriend : UIViewController <UITableViewDelegate>{
     NSArray *matchArray;
